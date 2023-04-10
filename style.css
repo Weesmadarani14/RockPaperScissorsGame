@@ -1,0 +1,46 @@
+.one {
+    background-color: red;
+    display: flex;
+    justify-content: center;   
+}
+
+body {
+    background-color: grey;
+}
+
+h1 {
+    align-items: center;
+}
+
+.header {
+    color: blue;
+    font-size: 50px;
+}
+
+.two {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.rock {
+    color: green;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+}
+
+.paper {
+    color: green;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+}
+
+.scissors {
+    color: green;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+}
