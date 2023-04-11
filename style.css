@@ -23,16 +23,26 @@ h1 {
 }
 
 .first {
-    font-size: 60px;
+    font-size: 40px;
     color: green;
 }
 
 .second {
-    font-size: 60px;
+    font-size: 40px;
     color: green;
 }
 
 .third {
-    font-size: 60px;
+    font-size: 40px;
     color: green;
+}
+
+.result {
+    background-color: white;
+    width: 400px;
+    height: 100px;
+}
+
+.score {
+    font-size: 35px;
 }
