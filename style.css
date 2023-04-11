@@ -1,5 +1,4 @@
 .one {
-    background-color: red;
     display: flex;
     justify-content: center;   
 }
@@ -18,29 +17,22 @@ h1 {
 }
 
 .two {
-    background-color: aqua;
     display: flex;
     justify-content: center;
     gap: 200px;
 }
 
-.rock {
+.first {
+    font-size: 60px;
     color: green;
-    height: 100px;
-    width: 100px;
-    font-size: 20px;
 }
 
-.paper {
+.second {
+    font-size: 60px;
     color: green;
-    height: 100px;
-    width: 100px;
-    font-size: 20px;
 }
 
-.scissors {
+.third {
+    font-size: 60px;
     color: green;
-    height: 100px;
-    width: 100px;
-    font-size: 20px;
 }
