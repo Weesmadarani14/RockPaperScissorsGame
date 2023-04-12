@@ -22,17 +22,17 @@ h1 {
     gap: 200px;
 }
 
-.first {
+#rock {
     font-size: 40px;
     color: green;
 }
 
-.second {
+#paper {
     font-size: 40px;
     color: green;
 }
 
-.third {
+#scissors {
     font-size: 40px;
     color: green;
 }
