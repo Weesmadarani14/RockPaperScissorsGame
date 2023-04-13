@@ -1,44 +1,46 @@
-// get computer to choose a random option
-// return the computer value
-// choose an option and have it compared to the computer choice
-// tally up the score for each round won
-// game goes up to whoever wins 5 rounds first
-// two players: player and computer
-
-// declare options for rock, paper, and scissors
-const winningChoices = ["Rock", "Paper", "Scissors"];
+const winningChoices = ["rock", "paper", "scissors"];
+const resultElement = document.getElementById("result");
 
 
 
-// function for computer choosing randomly
-function getComputerChoice() {
-    const randomChoice = Math.floor(Math.random() * choices.length);
-    return choices [randomChoice]
-}
+function play (playerSelection) {
 
-// function for comparing the selections
-function round (playerSelection, computerSelection) {
+        const computerSelection = winningChoices [Math.floor(Math.random() * winningChoices.length)];
+        let result;
+
     if (
-        (playerSelection == "Rock" && computerSelection == "Scissors") ||
-        (playerSelection == "Paper" && computerSelection == "Rock") || 
-        (playerSelection == "Scissors" && computerSelection == "Paper")
-    ) 
+        (playerSelection === computerSelection) 
+        )
     {
-        return "You are the winner!!!"
+        result = "It's a tie";
     }
+        
     else if (
-        (playerSelection == "Rock" && computerSelection == "Rock") ||
-        (playerSelection == "Paper" && computerSelection == "Paper") ||
-        (playerSelection == "Scissors" && computerSelection == "Scissors")
+        (playerSelection === "rock" && computerSelection === "scissors") ||
+        (playerSelection === "paper" && computerSelection === "rock")  ||
+        (playerSelection === "scissors" && computerSelection === "paper")
     ) 
     {
-        return "It's a tie"
+        result = "You win!!!!";
     }
     else {
-        return "Computer wins :("
+        result = "Computer wins :(";
     }
-}
 
+    document.getElementById("result").textContent = `You chose ${playerSelection}. Computer chose ${computerSelection}. ${result}`;
+    resultElement.textContent = `You chose ${playerSelection}. Computer chose ${computerSelection}. ${result}`;
+  }
 
-
-
+    
+    document.getElementById("rock").addEventListener("click", () => {
+        play("rock");
+      });
+      
+      document.getElementById("paper").addEventListener("click", () => {
+        play("paper");
+      });
+      
+      document.getElementById("scissors").addEventListener("click", () => {
+        play("scissors");
+      });
+ 
