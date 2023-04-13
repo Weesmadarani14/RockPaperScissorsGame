@@ -43,6 +43,11 @@ h1 {
     height: 100px;
 }
 
-.score {
+.results {
     font-size: 35px; 
+}
+
+#scores {
+    font-size: 35px;
+    font-weight: bold;
 }
