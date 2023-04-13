@@ -1,6 +1,7 @@
 const winningChoices = ["rock", "paper", "scissors"];
 const resultElement = document.getElementById("result");
-
+let playerWins = 0;
+let computerWins = 0;
 
 
 function play (playerSelection) {
@@ -27,6 +28,15 @@ function play (playerSelection) {
         result = "Computer wins :(";
     }
 
+    
+
+    if (playerWins === 5) {
+        resultElement.textContent = "Congratulations!! You win the game!!! Refresh page to play again.";
+    }
+    else if (computerWins === 5) {
+        resultElement.textContent = "Computer wins! Try again next time! Refresh page to play again."
+    }
+
     document.getElementById("result").textContent = `You chose ${playerSelection}. Computer chose ${computerSelection}. ${result}`;
     resultElement.textContent = `You chose ${playerSelection}. Computer chose ${computerSelection}. ${result}`;
   }
@@ -44,3 +54,6 @@ function play (playerSelection) {
         play("scissors");
       });
  
+
+
+      
