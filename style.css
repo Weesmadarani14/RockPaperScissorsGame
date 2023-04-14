@@ -16,7 +16,7 @@ h1 {
     font-size: 50px;
 }
 
-.two {
+#two {
     display: flex;
     justify-content: center;
     gap: 200px;
@@ -44,10 +44,15 @@ h1 {
 }
 
 .results {
-    font-size: 35px; 
+    font-size: 25px; 
 }
 
-#scores {
-    font-size: 35px;
+#playerScore {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#computerScore {
+    font-size: 30px;
     font-weight: bold;
 }
